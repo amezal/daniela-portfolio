@@ -5,3 +5,11 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
+
+main{
+  max-width:1366px;
+  display: flex;
+  flex-direction:row;
+  margin: 0 auto;
+}
+

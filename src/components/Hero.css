@@ -1,0 +1,45 @@
+.hero{
+  margin:auto;
+  padding:20vh 5vh;
+  font-size:1.6rem;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.hero div{
+  width:60%;
+}
+
+.hero p{
+  font-size:1.2rem;
+  width:80%;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero button{
+  background-color: #989898;
+  font-size: 1.2rem;
+  color: inherit;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius:12px;
+  font-weight:bold;
+}
+
+.hero img{
+  height:100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}

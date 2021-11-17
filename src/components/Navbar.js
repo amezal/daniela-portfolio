@@ -17,7 +17,7 @@ function Navbar() {
                     <li>Sobre mi</li>
                     <li>Blog</li>
                     <li>Recursos</li>
-                    <li onClick={() => alert('lala')}>Contacto</li>
+                    <li>Contacto</li>
                 </ul>
             </div>
         </nav>

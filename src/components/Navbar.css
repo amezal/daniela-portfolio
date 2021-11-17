@@ -1,4 +1,5 @@
 .navbar{
+
 }
 
 .navbar li{
@@ -7,40 +8,56 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding:0 2rem;
 }
+
 
 .navbar ul{
   margin:auto;
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  max-width: 1366px;
+}
+
+.search{
+  background-color: black;
 }
 
 .search ul{
-  background-color: black;
   font-size:0.8rem;
   justify-content: flex-end;
   height:2.5rem;
   padding-right:3rem;
 }
 
-.navbar li {
-  padding:0 2rem;
+.nav {
+  background-color: #989898;
+  font-size:1rem;
+  font-weight: 500;
+
+}
+
+.nav ul{
+  height:4.3rem;
 }
 
 .nav ul li:nth-child(1){
   padding:0;
-  margin-left: 2rem;
-  margin-right:8rem;
+  margin-right: 15rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .navbar li {
+    padding: 0 1rem;
+  }
+}
 
-
-.nav ul{
-  background-color: #989898;
-  font-size:1rem;
-  font-weight: 500;
-  height:4.3rem;
+@media only screen and (max-width: 768px) {
+  .nav ul li:nth-child(1){
+    padding:0;
+    margin-right: 2rem;
+  }
 }
