@@ -7,9 +7,25 @@ body{
 }
 
 main{
-  max-width:1366px;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   margin: 0 auto;
 }
 
+section{
+  border-bottom: 1px solid #989898;
+  margin: 0 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding: 10vh 5vw;
+  display:flex;
+}
+
+button{
+  background-color: #989898;
+  color: inherit;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius:12px;
+  font-weight:bold;
+}

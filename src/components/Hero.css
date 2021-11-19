@@ -1,14 +1,15 @@
 .hero{
-  margin:auto;
-  padding:20vh 5vh;
-  font-size:1.6rem;
-  display:flex;
+  padding-top:20vh;
+  padding-bottom:15vh;
+  font-size:1.8rem;
   flex-direction:row;
   justify-content: space-around;
+  border-bottom: 1px solid #989898;
 }
 
-.hero div{
-  width:60%;
+
+.hero h1{
+  font-size: 2em;
 }
 
 .hero p{
@@ -19,27 +20,62 @@
 .hero-buttons{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 100%
 }
 
 .hero button{
-  background-color: #989898;
-  font-size: 1.2rem;
-  color: inherit;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius:12px;
-  font-weight:bold;
+  font-size: 1.3rem;
+  margin-right: 1.5em;
 }
 
 .hero img{
   height:100%;
+  align-self: center;
 }
 
 @media only screen and (max-width: 1024px) {
-
+  .hero button{
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .hero button{
+    font-size: 1rem;
+  }
+
+  .hero img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .hero{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 0;
+    text-align: center;
+    margin: auto 0;
+  }
+
+  .hero p{
+    margin: 0 auto;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .hero button{
+    margin: 1em 15%;
+    font-size: 1.2rem;
+  }
+
+  .hero img{
+    margin-top:5vh;
+  }
 
 }

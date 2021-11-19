@@ -3,7 +3,7 @@ import './Hero.css';
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <section className="hero">
       <div>
         <h1>Titular</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate tenetur quos nisi sapiente sit adipisci!</p>
@@ -13,6 +13,8 @@ export default function Hero() {
         </div>
       </div>
       <img src="https://picsum.photos/300" alt="" />
-    </div>
+    </section>
   )
 }
+
+

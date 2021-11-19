@@ -1,0 +1,55 @@
+.different{
+    font-size:1.4rem;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:0;
+    padding-top:0;
+    align-items:center;
+}
+
+.different img{
+  width: 40vw;
+  height: 40vw;
+  max-width:650px;
+  max-height:650px;
+}
+
+.differences{
+  margin-left:3rem;
+}
+
+.differences h2{
+  margin-bottom:0.4em;
+}
+
+.differences button{
+  border:3px solid #666666;
+  background-color: transparent;
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.difference{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:1.5em;
+}
+
+
+.difference img{
+  width: 5vw;
+  height:5vw;
+  margin-right:1rem;
+}
+
+.difference h3{
+  margin: 0;
+}
+
+.difference p{
+  font-size:1.2rem;
+  margin:0;
+}
+
