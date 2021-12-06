@@ -8,6 +8,7 @@ export default function Hero() {
     <section className="hero">
       <StaticImage src="../assets/images/woman.jpg"
         alt="woman"
+        style={{ position: "absolute" }}
         placeholder="blurred"
         className="hero-background" />
       <div className="hero-content">
