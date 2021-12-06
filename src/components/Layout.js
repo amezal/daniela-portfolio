@@ -4,13 +4,13 @@ import Footer from './Footer'
 import './Layout.css';
 
 function Layout({ children }) {
-    return (
-        <>
-            <Navbar />
-            {children}
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  )
 }
 
 export default Layout

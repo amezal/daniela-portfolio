@@ -1,53 +1,85 @@
 .hero{
-  padding-top:20vh;
+  padding-top:0;
   padding-bottom:15vh;
-  font-size:1.8rem;
-  flex-direction:row;
-  justify-content: space-around;
-  border-bottom: 1px solid #989898;
+  font-size:1.8rem;  
+  position:relative;
+  color:black;
 }
 
+.hero-background{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.hero-content{
+  padding-left:5vw;
+}
 
 .hero h1{
+  padding-top:35vh;
   font-size: 2em;
+  width:19ch;
+  line-height: 100%;
+  margin-bottom: 0;
+
 }
 
 .hero p{
-  font-size:1.2rem;
-  width:80%;
+  width:40ch;
+  line-height:120%;
+  font-size:1.5rem;
+  font-weight: 600;
 }
 
 .hero-buttons{
+  margin-top: 4rem;
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%
+  width: 100%;
 }
 
 .hero button{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-right: 1.5em;
+  padding:1em 2em;
+  color: white;
 }
 
-.hero img{
-  height:100%;
-  align-self: center;
+#contactar-ahora {
+  background-color: #FF2F49;
+}
+
+#ir-a-servicios{
+  background-color: #0049FF;
 }
 
 @media only screen and (max-width: 1024px) {
+
   .hero button{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
+  .hero h1{
+    padding-top:20vh;
+  }
+
   .hero button{
     font-size: 1rem;
   }
 
-  .hero img{
-    width: 200px;
-    height: 200px;
+
+}
+
+@media only screen and (max-width: 768px){
+  .hero {
+    font-size:1.5rem;
   }
 }
 
@@ -55,16 +87,29 @@
   .hero{
     flex-direction: column;
     justify-content: space-between;
-    padding: 5vh 0;
+    padding-bottom: 20vh;
     text-align: center;
-    margin: auto 0;
+    hyphens: auto;
+  }
+
+  .hero-content{
+    padding:0;
+
+  }
+
+  .hero h1{
+    width:100%;
+    padding:10vh 0;
   }
 
   .hero p{
     margin: 0 auto;
+    text-align:left;
+    width:90%;
   }
 
   .hero-buttons{
+    width:100%;
     flex-direction: column;
     margin-top: 2rem;
   }
@@ -73,9 +118,4 @@
     margin: 1em 15%;
     font-size: 1.2rem;
   }
-
-  .hero img{
-    margin-top:5vh;
-  }
-
 }

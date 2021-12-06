@@ -1,17 +1,23 @@
 .services{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top:10vh;
-    padding-bottom:10vh;
-    font-size:1.7rem;
-    border:none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:10vh;
+  padding-bottom:10vh;
+  font-size:1.8rem;
+  border-bottom:none;
+  background-color:black;
+  color:white;
+}
+
+.services h2{
+  margin-bottom:0;
 }
 
 .services p{
   width:60%;
-  font-size:1.2rem;
+  font-size:1.4rem;
 }
 
 .services-list{
@@ -28,36 +34,65 @@
 .service{
   display:flex;
   flex-direction:column;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0 2rem;
   padding-bottom:1.8rem;
-  border-left: 1px solid #989898;
+  border-left: 1px solid white;
+  text-align:center;
+  line-height: 100%;
 }
 
 .service p {
   margin-top:0;
-  margin-bottom:2rem;
+  margin-bottom:4rem;
   width:100%;
-  font-size:1.2rem;
+  font-size:1.5rem;
   text-align: justify;
 }
 
 .service button{
   align-self: flex-start;
-  border:3px solid #666666;
+  border:2px solid white;
   background-color: transparent;
-  font-weight:bold;
+  font-weight:300;
+  padding:1em 2em;
   font-size:1rem;
+  transition: all 150ms ease-out;
 }
 
-@media only screen and (max-width: 768px){
-  .services-list{
-    flex-direction: column;
-    
+.service button:active, .service button:hover{
+  border: 2px solid #ffff00;
+  transition: all 300ms ease-out;
+}
+
+
+@media only screen and (max-width:768px){
+
+  .services{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right:0;
   }
+  
+  .services-list{
+    flex-direction: row;
+    overflow-x: scroll;
+    width:100vw;
+  }
+  
   .service{
-    justify-content: center;
-    border-left:none;
-    border-top: 1px solid #989898;
+    display:flex;
+    border:1px solid white;
+    padding: 1rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    border-radius:8px;
+    min-width:80vw;
+  }
+
+
+  .service:first-of-type{
+    border:1px solid white;
   }
 }

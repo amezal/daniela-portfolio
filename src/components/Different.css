@@ -1,17 +1,17 @@
 .different{
-    font-size:1.4rem;
-    flex-direction: row;
-    justify-content: center;
-    padding-left:0;
-    padding-top:0;
-    align-items:center;
+  font-size:1.4rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding:0;
+  align-items:center;
+  background-color:#0049ff;
+  color:white;
 }
 
-.different img{
-  width: 40vw;
-  height: 40vw;
-  max-width:650px;
-  max-height:650px;
+.different-img{
+  width: 50vw;
+  height: 50vw;
+  object-fit: scale-down;
 }
 
 .differences{
@@ -20,20 +20,21 @@
 
 .differences h2{
   margin-bottom:0.4em;
+  text-align:center;
 }
 
 .differences button{
-  border:3px solid #666666;
+  border:2px solid white;
   background-color: transparent;
   font-weight:bold;
-  font-size:1rem;
+  font-size:1.2rem;
 }
 
 .difference{
   display:flex;
   flex-direction:row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom:1.5em;
 }
 
@@ -53,3 +54,34 @@
   margin:0;
 }
 
+@media only screen and (max-width: 1024px){
+  .different-img{
+    width:30vw;
+    height:65vw;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .different{
+    flex-direction: column-reverse;
+    padding-right:0;
+  }
+  
+  .different-img{
+    display:none;
+  }
+  
+  .differences {
+    margin: auto 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .differences button{
+    width:12em;
+    align-self: center;
+    margin-bottom:5vh;
+  }
+
+}
