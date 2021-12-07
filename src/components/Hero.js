@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import './Hero.css';
 
 export default function Hero() {
@@ -15,17 +16,11 @@ export default function Hero() {
         <h1>Optimiza tu estrategia de marca y aumenta tus ventas</h1>
         <p>Acompaño a tu marca en cualquiera de sus etapas, desde la estrategia de marketing, desarrollo de mensajes, hasta su exposición en medios digitales.</p>
         <div className="hero-buttons">
-          <button id="contactar-ahora">
-            <Link to="#contact">
-              Contactar ahora
-            </Link>
-
+          <button id="contactar-ahora" onClick={() => scrollTo("#contact")}>
+            Contactar ahora
           </button>
-          <button id="ir-a-servicios">
-            <Link to="#services">
-              Ir a Servicios
-            </Link>
-
+          <button id="ir-a-servicios" onClick={() => scrollTo("#services")}>
+            Ir a Servicios
           </button>
 
         </div>

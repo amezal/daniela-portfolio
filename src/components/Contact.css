@@ -1,0 +1,108 @@
+.contact{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  padding:0;
+  padding-bottom:5rem;
+  position:relative;
+}
+
+.contact-background{
+  background-color:white;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.contact h2{
+  font-size:2rem;
+  margin-bottom: 0;
+}
+
+.contact p{
+  margin-top:0;
+  font-size:1.3rem;
+  text-align:center;
+  width:55%;
+}
+
+.contact form{
+  background-color:black;
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  gap:1rem;
+  padding-top:1.5rem;
+  margin-top:2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px;
+
+}
+
+.contact input, .contact select, .contact textarea{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight:normal;
+  background-color:#4D4D4D;
+  color:white;
+  border:none;
+  padding: 0.6em 0;
+  text-align: center;
+  margin: 0 1.5rem;
+  resize: none;
+}
+
+.contact option{
+  text-align:center;
+}
+
+.contact option:disabled{
+  color:#919191;
+}
+
+.contact input::placeholder, .contact select::placeholder, .contact textArea::placeholder{
+  color:white;
+}
+
+.contact input:focus::placeholder, .contact textarea:focus::placeholder{
+  transition:all 150ms;
+  color:transparent;
+}
+
+
+.contact form button{
+  background-color:#FFFF00;
+  margin-top:0.5rem;
+  border-radius:5px;
+  font-size:1.2rem;
+  font-weight:bold;
+  padding: 0.5em 0;
+}
+
+.empresa-web{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.empresa-web input{
+  margin:0;
+  width:100%
+}
+
+.empresa-web input:first-of-type{
+  border-right: 1px solid #989898
+}
+
+@media only screen and (max-width:768px){
+  .contact p{
+    width:80%;
+  }
+
+  .contact form{
+    width:90%;
+  }
+
+}

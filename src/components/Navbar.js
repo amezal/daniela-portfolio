@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import './Navbar.css';
 import { FaInstagram, FaLinkedinIn, FaBehance, FaSearch } from 'react-icons/fa';
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 function Navbar() {
 
@@ -42,13 +42,17 @@ function Navbar() {
       <div className={`hiddenOnMobile ${isActive ? 'active' : ''}`}
         onClick={hamburgerClicked}>
         <ul>
-          <li>
-            <Link to="/services">
-              Servicios
-            </Link>
+          <li onClick={() => {
+            if (document.querySelector('#services') != null) {
+              scrollTo("#services");
+            } else {
+              navigate("/#services");
+            }
+          }}>
+            Servicios
           </li>
           <li>
-            <Link to="/services">
+            <Link to="/aboutme">
               Sobre mi
             </Link>
           </li>
@@ -62,10 +66,14 @@ function Navbar() {
               Recursos
             </Link>
           </li>
-          <li>
-            <Link to="/contact">
-              Contacto
-            </Link>
+          <li onClick={() => {
+            if (document.querySelector('#contact') != null) {
+              scrollTo("#contact");
+            } else {
+              navigate("/#contact");
+            }
+          }}>
+            Contacto
           </li>
         </ul>
       </div>
@@ -95,18 +103,26 @@ function Navbar() {
       </div>
       <div className="nav">
         <ul>
-          <li>
-            <Link to="/">
-              Logo
-            </Link>
+          <li onClick={() => {
+            if (document.querySelector('.hero') != null) {
+              scrollTo(".hero");
+            } else {
+              navigate("/");
+            }
+          }}>
+            Logo
+          </li>
+          <li onClick={() => {
+            if (document.querySelector('#services') != null) {
+              scrollTo("#services");
+            } else {
+              navigate("/#services");
+            }
+          }}>
+            Servicios
           </li>
           <li>
-            <Link to="/services">
-              Servicios
-            </Link>
-          </li>
-          <li>
-            <Link to="/services">
+            <Link to="/aboutme">
               Sobre mi
             </Link>
           </li>
@@ -120,10 +136,14 @@ function Navbar() {
               Recursos
             </Link>
           </li>
-          <li>
-            <Link to="/contact">
-              Contacto
-            </Link>
+          <li onClick={() => {
+            if (document.querySelector('#contact') != null) {
+              scrollTo("#contact");
+            } else {
+              navigate("/#contact");
+            }
+          }}>
+            Contacto
           </li>
 
           <li className={`hamburger ${isActive ? 'active' : ''}`}

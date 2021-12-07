@@ -3,9 +3,15 @@ import Layout from '/src/components/Layout'
 function blog() {
   return (
     <Layout>
-      <div className="blog">
-
-      </div>
+      <main className="blog">
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+        <h1>WIP BLOG</h1>
+      </main>
     </Layout>
   )
 }

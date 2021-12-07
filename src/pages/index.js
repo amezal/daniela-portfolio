@@ -5,6 +5,9 @@ import Services from '/src/components/Services'
 import Different from '/src/components/Different'
 import Brands from '/src/components/Brands'
 import Articles from '/src/components/Articles'
+import Subscribe from '/src/components/Subscribe'
+import Contact from '/src/components/Contact'
+
 import './index.css'
 
 export default function Home() {
@@ -17,6 +20,8 @@ export default function Home() {
         <Different />
         <Brands />
         <Articles />
+        <Subscribe />
+        <Contact />
       </main>
     </Layout>
 

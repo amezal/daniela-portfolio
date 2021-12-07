@@ -10,6 +10,7 @@ function Different() {
         alt="Woman dressed in orange"
         placeholder="blurred"
         className="different-img"
+        id="different-img"
         imgStyle={{ objectPosition: "80% 50%" }} />
 
       <div className="differences">

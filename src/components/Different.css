@@ -67,7 +67,7 @@
     padding-right:0;
   }
   
-  .different-img{
+  .different-img img, .different .different-img{
     display:none;
   }
   

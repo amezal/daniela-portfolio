@@ -1,7 +1,9 @@
 import React from 'react'
 import './Footer.css';
 import { FaInstagram, FaLinkedinIn, FaBehance } from 'react-icons/fa';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 function Footer() {
   return (
@@ -29,33 +31,62 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <ul className="footer-pages">
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/services">
+        <div className="right-footer">
+          <ul className="footer-pages">
+            <li onClick={() => {
+              if (document.querySelector('.hero') != null) {
+                scrollTo(".hero");
+              } else {
+                navigate("/");
+              }
+            }}>
+              Logo
+            </li>
+            <li onClick={() => {
+              if (document.querySelector('#services') != null) {
+                scrollTo("#services");
+              } else {
+                navigate("/#services");
+              }
+            }}>
               Servicios
-            </Link>
-          </li>
-          <li>
-            <Link to="/services">
-              Sobre mi
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
+            </li>
+            <li>
+              <Link to="/aboutme">
+                Sobre mi
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/resources">
+                Recursos
+              </Link>
+            </li>
+            <li onClick={() => {
+              if (document.querySelector('#contact') != null) {
+                scrollTo("#contact");
+              } else {
+                navigate("/#contact");
+              }
+            }}>
               Contacto
-            </Link>
-          </li>
-        </ul>
+            </li>
+          </ul>
+          <div className="roastbrief">
+            <span>Lee mis artículos en:</span>
+            <a href="https://roastbrief.com.mx">
+              <StaticImage src="../assets/images/roastbrief.png"
+                alt="RoastBrief logo"
+                placeholder="blurred"
+                className="rb-img"
+                style={{ width: "10rem", height: "100%" }} />
+            </a>
+          </div>
+        </div>
       </div>
       <div className="bottom-footer">
         <p>Política de Privacidad</p>

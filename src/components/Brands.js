@@ -12,7 +12,8 @@ function Brands() {
         <StaticImage src="../assets/images/brands.jpg"
           alt="brands"
           placeholder="blurred"
-          className="brands-background" />
+          className="brands-background"
+          style={{ position: "absolute" }} />
 
         <h2>Marcas con las que he trabajado</h2>
         <div className="actual-brands">

@@ -42,6 +42,11 @@
 }
 
 @media only screen and (max-width: 768px){
+
+  .articles h2{
+    text-align:center;
+  }
+
   .actual-articles{
     flex-direction:row;
     overflow-x:auto;
