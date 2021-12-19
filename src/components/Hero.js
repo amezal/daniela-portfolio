@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import './Hero.css';
@@ -25,8 +24,6 @@ export default function Hero() {
 
         </div>
       </div>
-
-
     </section>
   )
 }

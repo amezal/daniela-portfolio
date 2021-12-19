@@ -80,6 +80,16 @@
   .hero {
     font-size:1.5rem;
   }
+
+  .hero p{
+    width:80%;
+  }
+
+  .hero h1{
+    width:100%;
+    margin-right: 0;
+  }
+
 }
 
 @media only screen and (max-width: 568px) {
@@ -93,11 +103,10 @@
 
   .hero-content{
     padding:0;
-
   }
 
   .hero h1{
-    width:100%;
+    width:95%;
     padding:10vh 0;
   }
 

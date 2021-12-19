@@ -27,9 +27,45 @@
   flex-direction:row;
   justify-content: space-between;
   margin: 2rem 0;
-  overflow-x: scroll;
+  overflow-x: auto;
   width:100%;
   gap:2rem;
 }
 
+.actual-brands div{
+  display:flex;
+  width:150px;
+  height:150px;
+}
 
+.actual-brands div:first-of-type{
+  padding-left:2rem;
+}
+
+.actual-brands div:last-of-type{
+  padding-right:2rem;
+}
+
+#walmart{
+  width:250px;
+}
+
+#flor{
+  width:200px;
+}
+
+#hispamer{
+  width:250px;
+}
+
+/* .brand{
+  width:100%;
+  height:100%;
+}
+
+.brand svg{
+  width:150px;
+  height:100%;
+}
+
+ */

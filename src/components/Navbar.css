@@ -3,12 +3,26 @@
   width:100%;
   top:0;
   transition: all ease-out 0.2s;
-  z-index:10000;
+  z-index:10;
+}
+
+.navbar button{
+  background-color:transparent;
+  padding:0;
+  font-size:1.2rem;
+  font-weight:500;
 }
 
 .hidden{
   top: -8rem;
   transition: all ease-in-out 0.2s;
+}
+
+.dani-logo{
+  width:8rem;
+  height:100%;
+  display:flex;
+  align-content: center;
 }
 
 .nav li{
@@ -18,7 +32,7 @@
   align-items: center;
   justify-content: center;
   padding:0 0.8rem;
-  margin: 0 1rem;
+  margin: 0;
   border-bottom:3px solid transparent;
   transition: all 150ms;
   cursor:pointer
@@ -29,7 +43,6 @@
   transition: all 300ms ease-out;
 }
 
-
 .navbar ul{
   margin:0 auto;
   display: flex;
@@ -38,7 +51,6 @@
   justify-content: space-around;
   align-items: center;
   max-width: 1366px;
-
 }
 
 .search{
@@ -57,11 +69,11 @@
   font-size:2rem;
 }
 
-
 .search li{
   padding-right:4em;
   color:black;
 }
+
 
 .nav {
   background-color: #252525;
@@ -76,13 +88,18 @@
 
 .nav ul li:nth-child(1){
   padding:0;
-  margin-right: 15rem;
+  margin-right: 12rem;
   border-bottom:none;
 }
 
 .nav ul li:last-of-type{
   padding:0;
   border-bottom:none;
+}
+
+
+.nav li:nth-of-type(7){
+  display:none;
 }
 
 .hamburger{
@@ -137,9 +154,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .nav ul li:nth-child(1){
-    padding:0;
-    margin-right: 3rem;
+
+  .nav ul {
+    padding-left:1rem;
+  }
+
+  .nav ul li:first-of-type{
+    width:20%;
+    margin-right:0;
   }
 
 }
@@ -147,31 +169,68 @@
 
 @media only screen and (max-width: 768px){
 
+  .hiddenOnMobile li:first-of-type{
+    padding-top:3rem;
+  }
 
   .search{
     display:none;
   }
 
   .nav ul{
-    padding:0 1.5rem;
+    padding:0 1rem;
     justify-content: space-between;
     height:3.2rem;
   }
 
-  .nav li{
-    display:none;
+  .dani-logo{
+    height:90%;
+    width:7rem;
   }
 
-  .nav li:first-of-type{
+  .nav li{
+    display:none;
+    border:none;
+  }
+
+  .nav li:hover, .nav li:active{
+    border-bottom:none;
+    background-color:transparent;
+  }
+
+  .nav ul li:first-of-type{
     display:flex;
+    height:100%;
+    margin-right:40%;
+    padding-left:1rem;
   }
 
   .nav li:last-of-type{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     padding:0;
-    justify-content: center;;
-    padding:0 1rem;
+    justify-content: center;
+    padding:0 0.5rem;
+    gap:1.5rem;
+  }
+
+  .nav li:nth-of-type(7){
+    display:flex;
+    padding:0;
+  }
+
+
+  .search-button{
+    align-self: flex-start;
+  }
+
+  .navbar-icon{
+    color:white;
+  }
+
+  .hamburger{
+    display:flex;
+    flex-direction:column;
   }
 
   .hamburger span{
@@ -195,7 +254,7 @@
 
 
   .hamburger.active span:nth-child(1){
-    transform: translate(0,0.65rem) rotate(225deg) ;
+    transform: translate(0,0.7rem) rotate(225deg) ;
   }
   
   .hamburger.active span:nth-child(2){
@@ -203,7 +262,7 @@
   }
   
   .hamburger.active span:nth-child(3){
-    transform: translate(0,-0.65rem) rotate(-225deg) ;
+    transform: translate(0,-0.7rem) rotate(-225deg) ;
   }
 
 }

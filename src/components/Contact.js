@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import Contacto1 from '/src/assets/svg/Contacto1.svg'
+import Contacto2 from '/src/assets/svg/Contacto2.svg'
 
 function Contact() {
   return (
@@ -23,12 +25,11 @@ function Contact() {
         <textarea name="description" placeHolder="Cuéntame un poco de tu proyecto" cols="30" rows="6" required></textarea>
         <button type="submit">Cotizar ahora</button>
       </form>
-      <StaticImage src="../assets/images/contactbg.png"
-        alt="brands"
-        placeholder="blurred"
-        className="contact-background"
-        style={{ position: "absolute" }}
-        imgStyle={{ objectFit: "fill", objectPosition: "-20rem 0" }} />
+
+      <div classname="contact-brackground">
+        <Contacto1 className="bg-img" id="contacto1" />
+        <Contacto2 className="bg-img" id="contacto2" />
+      </div>
     </section>
   )
 }

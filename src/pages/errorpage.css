@@ -1,0 +1,15 @@
+.errorpage{
+  color: black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.errorpage h1{
+  margin-top: 40vh;
+}
+
+.errorpage h3{
+  color: purple;
+  margin-bottom: 30vh;
+}

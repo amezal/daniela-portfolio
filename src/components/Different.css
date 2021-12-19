@@ -38,11 +38,15 @@
   margin-bottom:1.5em;
 }
 
-
-.difference img{
-  width: 5vw;
-  height:5vw;
+.difference svg{
+  width: 5rem;
+  height:5rem;
   margin-right:1rem;
+  align-self:center;
+}
+
+.difference svg .cls-2{
+  fill: #0049ff;
 }
 
 .difference h3{
@@ -52,13 +56,6 @@
 .difference p{
   font-size:1.2rem;
   margin:0;
-}
-
-@media only screen and (max-width: 1024px){
-  .different-img{
-    width:30vw;
-    height:65vw;
-  }
 }
 
 @media only screen and (max-width: 768px){
@@ -82,6 +79,11 @@
     width:12em;
     align-self: center;
     margin-bottom:5vh;
+  }
+
+  .difference{
+    margin-top:2rem;
+    flex-direction:column;
   }
 
 }

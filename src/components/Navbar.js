@@ -3,8 +3,9 @@ import { Link, navigate } from 'gatsby';
 import './Navbar.css';
 import { FaInstagram, FaLinkedinIn, FaBehance, FaSearch } from 'react-icons/fa';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import DaniLogo from '/src/assets/svg/Logo.svg';
 
-function Navbar() {
+function Navbar({ toggleSearch }) {
 
   const [isActive, setIsActive] = useState(false);
   const [hide, setHide] = useState('');
@@ -42,14 +43,16 @@ function Navbar() {
       <div className={`hiddenOnMobile ${isActive ? 'active' : ''}`}
         onClick={hamburgerClicked}>
         <ul>
-          <li onClick={() => {
-            if (document.querySelector('#services') != null) {
-              scrollTo("#services");
-            } else {
-              navigate("/#services");
-            }
-          }}>
-            Servicios
+          <li>
+            <button onClick={() => {
+              if (document.querySelector('#services') != null) {
+                scrollTo("#services");
+              } else {
+                navigate("/#services");
+              }
+            }}>
+              Servicios
+            </button>
           </li>
           <li>
             <Link to="/aboutme">
@@ -66,60 +69,68 @@ function Navbar() {
               Recursos
             </Link>
           </li>
-          <li onClick={() => {
-            if (document.querySelector('#contact') != null) {
-              scrollTo("#contact");
-            } else {
-              navigate("/#contact");
-            }
-          }}>
-            Contacto
+          <li>
+            <button onClick={() => {
+              if (document.querySelector('#contact') != null) {
+                scrollTo("#contact");
+              } else {
+                navigate("/#contact");
+              }
+            }}>
+              Contacto
+            </button>
           </li>
         </ul>
       </div>
       <div className="search">
         <ul>
           <li>
-            <a href="https://www.instagram.com/elar.mando">
+            <a href="https://www.instagram.com/danivhc" target="__blank">
               <FaInstagram className="navbar-icon" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/elar.mando">
+            <a href="https://www.linkedin.com/in/daniela-herrera-b21a6a58" target="__blank">
               <FaLinkedinIn className="navbar-icon" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/elar.mando">
+            <a href="https://www.behance.net/danihc9" target="__blank">
               <FaBehance className="navbar-icon" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/elar.mando">
+            <button onClick={toggleSearch}>
               <FaSearch size="1.8rem" className="navbar-icon" />
-            </a>
+            </button>
           </li>
         </ul>
       </div>
       <div className="nav">
         <ul>
-          <li onClick={() => {
-            if (document.querySelector('.hero') != null) {
-              scrollTo(".hero");
-            } else {
-              navigate("/");
-            }
-          }}>
-            Logo
+          <li>
+            <button onClick={() => {
+              if (document.querySelector('.hero') != null) {
+                scrollTo(".hero");
+              } else {
+                navigate("/");
+              }
+            }}>
+              <DaniLogo className="dani-logo" />
+            </button>
           </li>
-          <li onClick={() => {
-            if (document.querySelector('#services') != null) {
-              scrollTo("#services");
-            } else {
-              navigate("/#services");
-            }
-          }}>
-            Servicios
+
+          <li>
+            <button onClick={() => {
+              if (document.querySelector('#services') != null) {
+                scrollTo("#services");
+              } else {
+                navigate("/#services");
+              }
+            }}>
+              Servicios
+            </button>
+
           </li>
           <li>
             <Link to="/aboutme">
@@ -136,21 +147,31 @@ function Navbar() {
               Recursos
             </Link>
           </li>
-          <li onClick={() => {
-            if (document.querySelector('#contact') != null) {
-              scrollTo("#contact");
-            } else {
-              navigate("/#contact");
-            }
-          }}>
-            Contacto
+          <li>
+            <button onClick={() => {
+              if (document.querySelector('#contact') != null) {
+                scrollTo("#contact");
+              } else {
+                navigate("/#contact");
+              }
+            }}>
+              Contacto
+            </button>
           </li>
 
-          <li className={`hamburger ${isActive ? 'active' : ''}`}
-            onClick={hamburgerClicked}>
-            <span></span>
-            <span></span>
-            <span></span>
+          <li>
+            <button onClick={toggleSearch} className="search-button">
+              <FaSearch size="2rem" className="navbar-icon" />
+            </button>
+          </li>
+
+          <li>
+            <button className={`hamburger ${isActive ? 'active' : ''}`}
+              onClick={hamburgerClicked}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </li>
         </ul>
       </div>

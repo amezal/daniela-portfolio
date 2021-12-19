@@ -5,13 +5,34 @@
   padding:0;
   padding-bottom:5rem;
   position:relative;
+  background-color:transparent;
 }
 
 .contact-background{
-  background-color:white;
+  background-color:transparent;
+  position:absolute;
+  display:flex;
   width:100%;
   height:100%;
+}
+
+.bg-img{
+  width:50vw;
+  height:auto;
   z-index:-1;
+  position:absolute;
+}
+
+#contacto1{
+  fill: #ff2f49;
+  right:0;
+  bottom:1rem;
+}
+
+#contacto2{
+  width:30vw;
+  left:0;
+  top:1rem;
 }
 
 .contact h2{
@@ -40,7 +61,7 @@
 }
 
 .contact input, .contact select, .contact textarea{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 1rem;
   font-style: italic;
   font-weight:normal;

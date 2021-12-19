@@ -16,7 +16,7 @@
 }
 
 .services p{
-  width:60%;
+  width:80%;
   font-size:1.4rem;
 }
 
@@ -40,6 +40,12 @@
   border-left: 1px solid white;
   text-align:center;
   line-height: 100%;
+}
+
+.service svg{
+  height:5rem;
+  width:70%;
+  align-self:center;
 }
 
 .service p {
@@ -91,6 +97,11 @@
     min-width:80vw;
   }
 
+  .service svg{
+    padding-top:1rem;
+    width:70%;
+    height:6rem;
+  }
 
   .service:first-of-type{
     border:1px solid white;
