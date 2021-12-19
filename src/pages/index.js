@@ -7,7 +7,7 @@ import Brands from '/src/components/Brands'
 import Articles from '/src/components/Articles'
 import Subscribe from '/src/components/Subscribe'
 import Contact from '/src/components/Contact'
-import Seo from '/src/components/SEO'
+import Seo from '/src/components/Seo'
 import './index.css'
 import { graphql } from 'gatsby'
 

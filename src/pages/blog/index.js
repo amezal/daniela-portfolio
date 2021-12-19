@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '/src/components/Layout'
-import Seo from '/src/components/SEO'
+import Seo from '/src/components/Seo'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import './blog.css'
