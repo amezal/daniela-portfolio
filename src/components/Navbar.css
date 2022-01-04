@@ -236,9 +236,9 @@
   .hamburger span{
     position:relative;
     background-color:white;
-    width:2.2rem;
+    width:2rem;
     height:0.25rem;
-    margin: 0.22rem 0;
+    margin: 0.2rem 0;
     border-radius: 1.5px;
     transition: all 1s ease-in-out, background-color 0.5s ease-in-out;
   }
@@ -254,7 +254,7 @@
 
 
   .hamburger.active span:nth-child(1){
-    transform: translate(0,0.7rem) rotate(225deg) ;
+    transform: translate(0,0.65rem) rotate(-225deg) ;
   }
   
   .hamburger.active span:nth-child(2){
@@ -262,7 +262,7 @@
   }
   
   .hamburger.active span:nth-child(3){
-    transform: translate(0,-0.7rem) rotate(-225deg) ;
+    transform: translate(0,-0.65rem) rotate(225deg) ;
   }
 
 }

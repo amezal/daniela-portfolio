@@ -161,7 +161,7 @@ function Navbar({ toggleSearch }) {
 
           <li>
             <button onClick={toggleSearch} className="search-button">
-              <FaSearch size="2rem" className="navbar-icon" />
+              <FaSearch size="1.8rem" className="navbar-icon" />
             </button>
           </li>
 

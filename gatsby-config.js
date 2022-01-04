@@ -14,7 +14,17 @@ module.exports = {
   plugins: [
     //`gatsby-source-filesystem`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          quality: 90,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
@@ -23,7 +33,6 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: `https://dev-danielas-portfolio.pantheonsite.io/graphql`,
-        //includedRoutes: ["https://dev-danielas-portfolio.pantheonsite.io/wp-json/wp/v2/searchResults"],
       },
     },
     {

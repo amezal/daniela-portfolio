@@ -9,12 +9,12 @@ function Different() {
   return (
     <section className="different">
 
-      <StaticImage src="../assets/images/orangewoman.jpg"
-        alt="Woman dressed in orange"
+      <StaticImage src="../assets/images/HazmeParte.jpg"
+        alt="Hazme Parte"
         placeholder="blurred"
         className="different-img"
         id="different-img"
-        imgStyle={{ objectPosition: "80% 50%" }} />
+        imgStyle={{ objectPosition: "50% 50%" }} />
 
       <div className="differences">
         <h2>Hazme parte de tu equipo</h2>

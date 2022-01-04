@@ -6,8 +6,8 @@ import './Hero.css';
 export default function Hero() {
   return (
     <section className="hero">
-      <StaticImage src="../assets/images/woman.jpg"
-        alt="woman"
+      <StaticImage src="../assets/images/BannerPrincipal.jpg"
+        alt="Banner Principal"
         style={{ position: "absolute" }}
         placeholder="blurred"
         className="hero-background" />
