@@ -5,7 +5,7 @@
   text-align: center;
   padding-top:10vh;
   padding-bottom:10vh;
-  font-size:1.8rem;
+  font-size:1.4rem;
   border-bottom:none;
   background-color:black;
   color:white;
@@ -39,7 +39,7 @@
   padding-bottom:1.8rem;
   border-left: 1px solid white;
   text-align:center;
-  line-height: 100%;
+  /* line-height: 100%; */
 }
 
 .service svg{
@@ -52,7 +52,7 @@
   margin-top:0;
   margin-bottom:4rem;
   width:100%;
-  font-size:1.5rem;
+  font-size:1.2rem;
   text-align: justify;
 }
 
@@ -64,6 +64,7 @@
   padding:1em 2em;
   font-size:1rem;
   transition: all 150ms ease-out;
+  font-style: italic;
 }
 
 .service button:active, .service button:hover{

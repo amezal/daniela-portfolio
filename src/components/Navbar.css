@@ -66,7 +66,7 @@
 
 .navbar-icon{
   color:black;
-  font-size:2rem;
+  font-size:1.7rem;
 }
 
 .search li{
@@ -74,6 +74,11 @@
   color:black;
 }
 
+.search button{
+  display:flex;
+  align-items:center;
+  padding-bottom: 4px;
+}
 
 .nav {
   background-color: #252525;

@@ -93,7 +93,7 @@ function Footer() {
           </ul>
           <div className="roastbrief">
             <span>Lee mis artículos en:</span>
-            <a href="https://roastbrief.com.mx">
+            <a href="https://roastbrief.com.mx/?s=daniela+herrera">
               <StaticImage src="../assets/images/roastbrief.png"
                 alt="RoastBrief logo"
                 placeholder="blurred"
