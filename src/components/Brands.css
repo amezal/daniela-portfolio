@@ -47,25 +47,29 @@
 }
 
 #walmart{
-  width:250px;
+  padding-top: 40%;
 }
-
 #flor{
-  width:200px;
+  padding-top:30%;
 }
-
 #hispamer{
-  width:250px;
+  padding-top:35%;
+}
+#molino{
+  padding-top:30%;
 }
 
-/* .brand{
-  width:100%;
-  height:100%;
+@media only screen and (max-width:768px){
+  #walmart{
+    padding-top: 40%;
+  }
+  #flor{
+    padding-top:20%;
+  }
+  #hispamer{
+    padding-top:30%;
+  }
+  #molino{
+    padding-top:25%;
+  }
 }
-
-.brand svg{
-  width:150px;
-  height:100%;
-}
-
- */
