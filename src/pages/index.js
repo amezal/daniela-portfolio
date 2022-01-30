@@ -13,6 +13,10 @@ import { graphql } from 'gatsby'
 
 export default function Home({ data }) {
 
+  if (!data) {
+    return null;
+  }
+
   let posts = data.allWpPost.nodes;
 
   return (

@@ -12,7 +12,14 @@ module.exports = {
 
   },
   plugins: [
-    //`gatsby-source-filesystem`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    // `gatsby-source-filesystem`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -42,6 +49,6 @@ module.exports = {
           include: /assets/ // See below to configure properly
         }
       }
-    }
+    },
   ],
 }
