@@ -14,7 +14,8 @@ function Different() {
         placeholder="blurred"
         className="different-img"
         id="different-img"
-        imgStyle={{ objectPosition: "50% 50%" }} />
+      // imgStyle={{ objectPosition: "50% 50%", objectFit: "cover" }}
+      />
 
       <div className="differences">
         <h2>Hazme parte de tu equipo</h2>

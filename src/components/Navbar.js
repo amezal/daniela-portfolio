@@ -161,14 +161,13 @@ function Navbar({ toggleSearch }) {
 
           <li>
             <button onClick={toggleSearch} className="search-button">
-              <FaSearch size="1.8rem" className="navbar-icon" />
+              <FaSearch size="1.4rem" className="navbar-icon" />
             </button>
           </li>
 
           <li>
             <button className={`hamburger ${isActive ? 'active' : ''}`}
               onClick={hamburgerClicked}>
-              <span></span>
               <span></span>
               <span></span>
             </button>

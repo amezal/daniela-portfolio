@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'gatsby'
 import './Articles.css';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 function Articles({ posts }) {
+
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    if (myRef.current) {
+      myRef.current.scrollLeft = myRef.current.firstChild.offsetWidth + 30;
+    }
+  }, [myRef]);
 
   function shortenString(str) {
     const maxLength = 200;
@@ -15,7 +23,7 @@ function Articles({ posts }) {
   return (
     <section className="articles">
       <h2>Últimos artículos</h2>
-      <div className="actual-articles">
+      <div className="actual-articles" ref={myRef}>
 
         {posts.map(post => (
           <div key={post.id} className="article">

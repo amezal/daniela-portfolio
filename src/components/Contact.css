@@ -6,6 +6,7 @@
   padding-bottom:5rem;
   position:relative;
   background-color:transparent;
+  font-size:1rem;
 }
 
 .contact-background{
@@ -14,6 +15,7 @@
   display:flex;
   width:100%;
   height:100%;
+  z-index:-1;
 }
 
 .bg-img{
@@ -36,13 +38,13 @@
 }
 
 .contact h2{
-  font-size:2rem;
+  font-size:2.5em;
   margin-bottom: 0;
 }
 
 .contact p{
-  margin-top:0;
-  font-size:1.3rem;
+  font-size:1.2em;
+  font-weight:600;
   text-align:center;
   width:55%;
 }
@@ -57,12 +59,12 @@
   margin-top:2rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius:20px;
-
+  z-index:2
 }
 
 .contact input, .contact select, .contact textarea{
   font-family: Poppins, sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-style: italic;
   font-weight:normal;
   background-color:#4D4D4D;
@@ -118,12 +120,33 @@
 }
 
 @media only screen and (max-width:768px){
+  .contact {
+    font-size: 0.8rem;
+  }
+
   .contact p{
     width:80%;
   }
 
   .contact form{
     width:90%;
+  }
+
+  .empresa-web{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    gap:1rem
+  }
+  
+  .empresa-web input{
+    margin:0;
+    width:100%
+  }
+  
+  .empresa-web input:first-of-type{
+    border-right: none;
   }
 
 }

@@ -2,7 +2,6 @@
   display:flex;
   flex-direction:column;
   justify-content: center;
-  font-size:1.7rem;
   position:relative
 }
 
@@ -18,6 +17,7 @@
 }
 
 .brands h2{
+  font-size:2.5em;
   align-self: center;
   text-align: center;
 }
@@ -60,6 +60,10 @@
 }
 
 @media only screen and (max-width:768px){
+  .brands {
+    padding: 5vh 0;
+    font-size:0.8rem
+  }
   #walmart{
     padding-top: 40%;
   }

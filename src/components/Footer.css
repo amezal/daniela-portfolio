@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: stretch;
   color:white;
+  font-size:1rem;
 }
 
 .footer button{
   background-color:transparent;
   padding:0;
-  font-size:1.2rem;
+  font-size:1em;
   font-weight:400;
 }
 
@@ -50,7 +51,7 @@
 
 .footer-icon{
   color:white;
-  font-size:2rem;
+  font-size:1.8em;
 }
 
 .top-footer{
@@ -107,12 +108,13 @@
 .bottom-footer{
   background-color: #0049FF;
   font-weight: normal;
-  padding-left:5vw;
+  padding-left:10vw;
   display:flex;
   flex-direction:row;
   gap:5vw;
-  padding-top:5vh;
-  padding-bottom:7vh;
+  padding-top:3vh;
+  padding-bottom:4vh;
+  font-size:0.6em
 }
 
 .right-footer{
@@ -127,23 +129,27 @@
     flex-direction:column;
     align-content:center;
     padding:3rem 2vw;
+    font-size:1rem;
   }
   .top-footer div{
-    width: 100%;
-    align-items: center;
+    width: 90%;
+    align-items: flex-start;
   }
-  .footer-pages{
-    flex-wrap: wrap;
-    margin-top:2rem;
-    width:100%;
-    align-self:center;
-  }
+
   .bottom-footer{
-    flex-direction:column;
-    gap:1vh;
+    gap:10vw;
   }
-  .roastbrief{
-    justify-content: center;
+  .roastbrief, .top-footer p, .footer-socials{
+    padding-left:5vw;
+    justify-content: flex-start;
+  }
+
+  .top-footer .roastbrief {
+    align-items:center
+  }
+
+  .right-footer .footer-pages {
+    display:none;
   }
 
 }

@@ -19,6 +19,13 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
     // `gatsby-source-filesystem`,
     `gatsby-plugin-image`,
     {
