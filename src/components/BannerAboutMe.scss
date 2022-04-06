@@ -1,0 +1,111 @@
+.banner-aboutme {
+  padding-bottom: 0;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff2f49;
+    width: 55%;
+    height: 100vh;
+
+    h1 {
+      color: white;
+      font-size: 3.6rem;
+      line-height: 1.1;
+      width: 80%;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 2.3rem;
+      font-weight: 400;
+      line-height: 1.1;
+      width: 80%;
+      font-style: italic;
+    }
+  }
+
+  .banner {
+    width: 45%;
+
+    &__img {
+      transform: scale(1.5);
+      object-position: 95% 10%;
+    }
+  }
+
+  @media only screen and (max-width:1200px) {
+    .content {
+      h1 {
+        width: 90%;
+        font-size: 3.4rem;
+      }
+
+      p {
+        width: 90%;
+        font-size: 2.1rem;
+      }
+    }
+
+    .banner {
+      &__img {
+        transform: scale(1.3);
+        object-position: 70% 10%;
+      }
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    .content {
+      width: 100%;
+      height: 50vh;
+      text-align: center;
+      justify-content: flex-end;
+
+      h1 {
+        font-size: 3.1rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .banner {
+      width: 100%;
+
+      &__img {
+        transform: scale(2);
+        left: -25%;
+      }
+    }
+  }
+
+  @media only screen and (max-width:568px) {
+    .content {
+      height: 50vh;
+
+      h1 {
+        font-size: 2.2rem;
+        width: 85%;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+      }
+    }
+
+    .banner {
+      height: 50vh;
+    }
+  }
+}

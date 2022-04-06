@@ -32,8 +32,8 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: [`auto`, `webp`],
-          quality: 90,
+          formats: [`auto`, `webp`, `jpg`],
+          quality: 100,
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: `transparent`,
         }
@@ -43,6 +43,7 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     `gatsby-wordpress-search`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
