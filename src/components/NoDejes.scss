@@ -69,19 +69,17 @@
       }
 
       p {
-        font-size: 1.8rem;
         margin-bottom: 3rem;
       }
     }
   }
 
   @media only screen and (max-width:568px) {
-    gap: 4rem;
+    gap: 3rem;
 
     .content {
 
       h2 {
-        // font-size: 2.2rem;
         width: 85%;
       }
 
