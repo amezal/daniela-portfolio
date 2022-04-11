@@ -1,5 +1,6 @@
 .banner-aboutme {
   padding-bottom: 0;
+  border: none;
 
   .content {
     display: flex;
@@ -70,11 +71,11 @@
       justify-content: flex-end;
 
       h1 {
-        font-size: 3.1rem;
+        font-size: 2.5rem;
       }
 
       p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-bottom: 3rem;
       }
     }
@@ -91,16 +92,17 @@
 
   @media only screen and (max-width:568px) {
     .content {
-      height: 50vh;
+      padding-top: 1.5rem;
+      // height: 50vh;
 
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         width: 85%;
       }
 
       p {
         font-size: 1.2rem;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
       }
     }
 

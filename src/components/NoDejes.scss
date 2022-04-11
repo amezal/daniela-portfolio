@@ -1,0 +1,95 @@
+.no-dejes {
+  border: none;
+  background-color: black;
+  padding: 15vh 0;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+
+    &1 {
+      width: 55%;
+
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.31;
+        width: 60%;
+        margin-bottom: 0;
+      }
+    }
+
+    &2 {
+      width: 45%;
+
+      p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.2;
+        width: 80%;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width:1200px) {
+    padding: 5vh 0;
+
+    .content {
+      height: 45vh;
+
+      &1 {
+        h2 {
+          width: 80%;
+        }
+      }
+
+      p {
+        width: 80%;
+        // font-size: 2.1rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      height: unset;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width:568px) {
+    gap: 4rem;
+
+    .content {
+
+      h2 {
+        // font-size: 2.2rem;
+        width: 85%;
+      }
+
+      p {
+        width: 90%;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
