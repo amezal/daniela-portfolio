@@ -13,7 +13,7 @@ const SoyDaniela = () => {
       />
       <div className="content">
         <h2>Soy Daniela Herrera <br />
-          Master en Marketing Digital desde hace más de 5 años
+          Máster en Marketing Digital desde hace más de 5 años
         </h2>
         <p>
           En todo este tiempo me he preparado para

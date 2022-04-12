@@ -40,6 +40,9 @@
 
   @media only screen and (max-width:1200px) {
     .content {
+      height: unset;
+      padding: 5vh 0;
+
       h1 {
         width: 90%;
         font-size: 3.4rem;

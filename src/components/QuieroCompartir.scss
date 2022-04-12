@@ -7,12 +7,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0049ff;
+    background-color: #ffff00;
     width: 50%;
     height: 90vh;
 
     h2 {
-      color: white;
+      color: black;
       font-size: 2.5rem;
       line-height: 1.1;
       width: 80%;
@@ -20,7 +20,7 @@
     }
 
     p {
-      color: white;
+      color: black;
       font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.1;
@@ -40,15 +40,8 @@
 
   @media only screen and (max-width:1200px) {
     .content {
-      h2 {
-        width: 90%;
-        font-size: 3.4rem;
-      }
-
-      p {
-        width: 90%;
-        font-size: 2.1rem;
-      }
+      height: unset;
+      padding: 5vh 0;
     }
 
     .banner {
@@ -60,7 +53,7 @@
   }
 
   @media only screen and (max-width:768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 0;
 
@@ -76,7 +69,6 @@
 
       p {
         font-size: 1.4rem;
-        margin-bottom: 3rem;
       }
     }
 
@@ -85,7 +77,6 @@
 
       &__img {
         transform: scale(1.6) !important;
-        // left: -25%;
       }
     }
   }
@@ -102,12 +93,15 @@
       p {
         width: 95%;
         font-size: 1.2rem;
-        margin-bottom: 4rem;
       }
     }
 
     .banner {
-      height: 50vh;
+      height: 20vh;
+
+      &__img {
+        object-position: -30px 10%;
+      }
     }
   }
 }

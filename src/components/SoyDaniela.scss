@@ -40,15 +40,8 @@
 
   @media only screen and (max-width:1200px) {
     .content {
-      h2 {
-        width: 90%;
-        font-size: 3.4rem;
-      }
-
-      p {
-        width: 90%;
-        font-size: 2.1rem;
-      }
+      height: unset;
+      padding: 5vh 0;
     }
 
     .banner {
@@ -76,7 +69,6 @@
 
       p {
         font-size: 1.4rem;
-        margin-bottom: 3rem;
       }
     }
 
@@ -85,7 +77,6 @@
 
       &__img {
         transform: scale(1.6) !important;
-        // left: -25%;
       }
     }
   }
@@ -102,7 +93,6 @@
       p {
         width: 95%;
         font-size: 1.2rem;
-        margin-bottom: 4rem;
       }
     }
 
