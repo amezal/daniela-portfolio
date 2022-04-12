@@ -10,7 +10,7 @@ const BannerAboutMe = () => {
         <p>Desde la estrategia, <br /> hasta la implementación.</p>
       </div>
       <StaticImage
-        src="../assets/images/Banner_sobremi.jpg"
+        src="../assets/images/Banner_aboutme.jpg"
         className="banner"
         imgClassName="banner__img"
         quality={100}
