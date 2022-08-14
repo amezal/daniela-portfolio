@@ -1,16 +1,16 @@
 import React from 'react'
 import Layout from '/src/components/Layout'
 import Banner from '/src/components/BannerBlog'
+import Posts from '/src/components/Posts'
+import Contact from '/src/components/Contact'
 import Seo from '/src/components/Seo'
 import { graphql, Link } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import './blog.scss'
 
 
 function blog({ data }) {
 
-  function shortenString(str) {
-    const maxLength = 150;
+  function shortenString(str, maxLength = 150) {
     let trimmedString = str.substr(0, maxLength);
     trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
     return trimmedString + "...";
@@ -28,28 +28,8 @@ function blog({ data }) {
           data &&
           <>
             <Banner post={latestPost} shortenString={shortenString} />
-            <div className="posts">
-              {posts.filter((p, i) => i > 0).map(post => (
-                <div key={post.id} className="article blog-article">
-
-                  <Link className="readmore" to={`/blog/${post.slug}`}>
-                    <GatsbyImage
-                      className="featured-img-wrapper"
-                      imgClassName="featured-img"
-                      image={getImage(post.featuredImage.node.localFile)}
-                      width={50}
-                      height={50}
-                      alt={post.title} />
-                  </Link>
-
-                  <Link className="readmore" to={`/blog/${post.slug}`}>
-                    <h3>{post.title}</h3>
-                  </Link>
-                  <p dangerouslySetInnerHTML={{ __html: `${shortenString(post.excerpt)}` }}></p>
-                  <Link className="readmore" to={`/blog/${post.slug}`}>Leer más</Link>
-                </div>
-              ))}
-            </div>
+            <Posts posts={posts.filter((p, i) => i > 0 && i < 4)} shortenString={shortenString} />
+            <Contact />
           </>
         }
 
