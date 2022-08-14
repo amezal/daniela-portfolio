@@ -21,7 +21,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      <Seo title="Home" description="This is the homepage" />
+      <Seo title="Daniela Herrera" description="This is the homepage" />
       <main>
         <Hero />
         <Services />

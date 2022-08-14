@@ -11,7 +11,7 @@ import Contact from '../components/Contact';
 function aboutme() {
   return (
     <Layout>
-      <Seo title="About Me" description="About Daniela Herrera..." />
+      <Seo title="Sobre mi | Daniela herrera" description="Sobre Daniela Herrera..." />
       <main className="aboutme">
         <BannerAboutMe />
         <NoDejes />

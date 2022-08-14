@@ -34,6 +34,7 @@ function Layout({ children }) {
 
   return (
     <>
+      <div id="fb-root"></div>
       {showSearch && <SearchResults data={data} toggleSearch={toggleSearch} hide={showSearch} />}
       <Navbar toggleSearch={toggleSearch} />
       {children}

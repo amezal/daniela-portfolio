@@ -22,7 +22,7 @@ function blog({ data }) {
 
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title="Blog | Daniela Herrera" />
       <main className="blog">
         {
           data &&
